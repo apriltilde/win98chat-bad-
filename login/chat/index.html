@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chat</title>
+	<link rel="stylesheet" href="https://unpkg.com/98.css">
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+
+
+<div class="window" id="chatwin">
+  <div class="title-bar">
+    <div class="title-bar-text">Chat</div>
+    <div class="title-bar-controls">
+      <button onclick = "showside()" aria-label="Help"></button>
+      <button aria-label="Close"></button>
+    </div>
+  </div>
+  <div class="window-body" id="chatbody">
+  <div id="chat">
+  </div>
+	<div class="bottom">
+		<div class="buttons">
+			<div style="width: 100%" class="field-row">
+			  <input style="width: 95%" id="text17" type="text" />
+			  <button style="width: 5%" id="send" onclick="sendMessage(); fetchData();">Send</button>
+			</div>
+		</div>
+	</div>
+  </div>
+</div>
+</div>
+
+<div id = "side">
+<div class="window" id = "online" >
+  <div class="title-bar">
+    <div class="title-bar-text">online</div>
+    <div class="title-bar-controls">
+    <button onclick = "mobile();" aria-label = "Close"></button>
+    </div>
+  </div>
+  <div class="window-body">
+<ul class="tree-view">
+  <li>	
+    Online
+    <ul id = "onlineli">
+    </ul>
+  </li>
+  <li>
+    <details>
+      <summary>Offline</summary>
+      <ul id = "offlineli">
+      </ul>
+    </details>
+  </li>
+</ul>
+
+</div>
+</div>
+
+<div class="window" id = "channels" >
+  <div class="title-bar">
+    <div class="title-bar-text">channels</div>
+    <div class="title-bar-controls">
+    </div>
+  </div>
+  <div class="window-body">
+	<ul class="tree-view">
+		  <li>
+    <details open>
+      <summary>DM</summary>
+      <ul id = "dms">
+		<li>gay</li>
+      </ul>
+    </details>
+  </li>
+  <li>
+    <details open>
+      <summary>Main Channels</summary>
+      <ul id = "dms">
+        <li><a href = '/login/chat?chatid="main"'>main</a></li>
+      </ul>
+    </details>
+  </li>
+</ul>
+
+</div>
+</div>
+<div class="window" >
+  <div class="title-bar">
+    <div class="title-bar-text">Add DM</div>
+    <div class="title-bar-controls">
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="row" style = "text-align: center;">
+      <label for="text18">Friend Discriminator</label>
+      <input id="text18" type="text" />
+      <br>
+      <br>
+      <label for="text19">Friend Name</label>
+      <input id="text19" type="text" />
+      <br>
+      <br>
+      <button onclick="discrimadd()">Add</button>
+    </div>
+  </div>
+</div>
+<div class="window" >
+  <div class="title-bar">
+    <div class="title-bar-text">Delete DM</div>
+    <div class="title-bar-controls">
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="row" style = "text-align: center;">
+      <label for="text21">Chat Name</label>
+      <input id="text21" type="text" />
+      <br>
+      <br>
+      <button id="deleteButton">Delete</button>
+    </div>
+  </div>
+</div>
+<div class="window" >
+  <div class="title-bar">
+    <div class="title-bar-text">Copyright</div>
+    <div class="title-bar-controls">
+    </div>
+  </div>
+  <div class="window-body">
+    <div class="row" style = "text-align: center;">
+      <a href = "https://april.lexiqqq.com/"><img src="https://april.lexiqqq.com/images/button.gif"></a>
+      <br>
+      <label style = "float: right" for="text21">Made by <a href = "https://april.lexiqqq.com/">April</label>
+      <br>
+    </div>
+  </div>
+  
+</div>
+</div>
+</div>
+
+</body>
+<script src="script.js"></script>
+</html>

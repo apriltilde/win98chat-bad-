@@ -1,0 +1,35 @@
+body, html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	height: 100dvh;
+	justify-content: center;
+	align-items: center;
+	background: darkblue;
+}
+
+.window {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.title-bar {
+	width: calc(100% - 7px);
+}
+
+.field-row-stacked {
+	width: 200px;
+}
+
+.button {
+	display: flex;
+	width: 100%;
+	justify-content: right;
+	gap: 3px;
+}
+
